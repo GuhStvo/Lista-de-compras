@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4747e2;
+    color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px black;
+
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+footer {
+    background-color: #4747e2;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+main {
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+
+    input {
+        height: 35px;
+        width: 250px;
+
+        padding: 0 8px;
+    }
+
+    button {
+        padding: 0 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        background-color: #4747e2;
+        color: #fff;
+        border: 1px solid #ccc;
+    }
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    div {
+        cursor: default;
+    }
+
+    button {
+        padding: 5px;
+    }
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+.dark-mode input, .dark-mode button {
+    background-color: #555;
+    color: #fff;
+}
+.dark-mode button:hover {
+    background-color: #444;
+}
+
+#tema {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
